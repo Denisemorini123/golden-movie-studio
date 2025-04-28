@@ -4,8 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"http-server\" \"node server.js\""
+    "start": "concurrently \"http-server\" \"node server.js\"",
+    "test": "npx cypress open", 
+    "test:run": "npx cypress run --spec \"cypress/e2e/JS/Busca.cy.js\""
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "cypress": "^14.3.2",
     "http-server": "^14.1.1"
   }
 }
