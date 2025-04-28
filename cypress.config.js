@@ -4,6 +4,7 @@ module.exports = {
     setupNodeEvents(on, config) {
       // você pode configurar plugins aqui se precisar
     },
+    baseUrl: 'http://127.0.0.1:8080/'
   },
 };
 
